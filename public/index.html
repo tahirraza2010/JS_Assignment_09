@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator </title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 style="align-items: center; margin-left: 20px; margin-bottom: 30px;">My Calculator App</h1>
+      <div class="calculator">
+        <input id="inputField"
+        readonly
+        placeholder="0"
+        class="result"
+        type="text" />
+        <div>
+          <button onclick="clrAll()" class="button operator">AC</button>
+          <button onclick="dltChat()" class="button operator">DEL</button>
+          <button class="button operator">%</button>
+          <button class="button operator">/</button>
+        </div>
+        <div>
+          <button onclick="getValue(7)" class="button">7</button>
+          <button onclick="getValue(8)" class="button">8</button>
+          <button onclick="getValue(9)" class="button">9</button>
+          <button onclick="getValue('*')" class="button operator">*</button>
+        </div>
+        <div>
+          <button onclick="getValue(4)" class="button">4</button>
+          <button onclick="getValue(5)" class="button">5</button>
+          <button onclick="getValue(6)" class="button">6</button>
+          <button onclick="getValue('-')" class="button operator">-</button>
+        </div>
+        <div>
+          <button onclick="getValue(1)" class="button">1</button>
+          <button onclick="getValue(2)" class="button">2</button>
+          <button onclick="getValue(3)" class="button">3</button>
+          <button onclick="getValue('+')" class="button operator">+</button>
+        </div>
+
+        <div>
+          <button onclick="getValue('00')" class="button">00</button>
+          <button onclick="getValue(0)" class="button">0</button>
+          <button onclick="getValue('.')" class="button">.</button>
+          <button onclick="equal()" class="button equalBtn">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
